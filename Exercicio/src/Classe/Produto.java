@@ -4,7 +4,7 @@ public class Produto {
 	
 	String nome;
 	double preco;
-	double desconto;
+	static double desconto = 0.25;
 	
 	Produto() { //Construtor sem parâmetro (Pode funcionar junto com o construtor com parâmetros)
 		
@@ -14,14 +14,13 @@ public class Produto {
 		nome = nomeInicial;
 	}
 	
-	Produto(String nomeInicial, double precoInicial, double descontoInicial) { //Construtor com vários parâmetros
+	Produto(String nomeInicial, double precoInicial) { //Construtor com vários parâmetros
 		nome = nomeInicial;
 		preco = precoInicial;
-		desconto = descontoInicial;
 	}
 
 	double precoComDesconto() {
-		return preco * (1-desconto);
+		return preco * (1 - desconto);
 	}
 	
 	double precoComDesconto(double descontoDoGerente) {

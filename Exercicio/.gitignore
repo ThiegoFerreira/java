@@ -1,0 +1,10 @@
+# Ignorar metadados do Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+
+# Compilados Java
+*.class
+bin/
+target/
